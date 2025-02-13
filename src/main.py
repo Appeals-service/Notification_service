@@ -28,7 +28,7 @@ async def main() -> None:
     connection = await connect_robust(settings.get_rmq_url())
     channel = await connection.channel()
     await channel.set_qos(prefetch_count=100)
-    queue = await channel.declare_queue(settings.RABBITMQ_QUEUE_NAME, auto_delete=True)
+    queue = await channel.declare_queue(settings.RABBITMQ_QUEUE_NAME)
 
     await queue.consume(process_message)
     logger.info("Waiting for messages...")
