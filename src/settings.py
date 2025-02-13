@@ -14,6 +14,11 @@ class Settings(BaseSettings):
     RABBITMQ_DEFAULT_PASS: str
     RABBITMQ_QUEUE_NAME: str
 
+    EMAIL_SENDER_NAME: str
+    APPLICATION_EMAIL_PASSWORD: str
+    SMTP_SERVER: str
+    SMTP_PORT: str
+
     LOGGING_LEVEL: str = "DEBUG"
     LOGGING_JSON: bool = True
     LOGGING_FORMAT: str = "%(asctime)s - %(filename)s - %(levelname)s - %(message)s"
