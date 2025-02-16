@@ -5,8 +5,8 @@ import logging
 from aio_pika import connect_robust
 from aio_pika.abc import AbstractIncomingMessage
 
-from src.send_mail import send_message
-from src.settings import settings
+from send_mail import send_message
+from settings import settings
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(format=settings.LOGGING_FORMAT)

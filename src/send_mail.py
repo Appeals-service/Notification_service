@@ -2,7 +2,7 @@ from email.message import EmailMessage
 
 from aiosmtplib import SMTP
 
-from src.settings import settings
+from settings import settings
 
 async def send_message(email: str, msg_sub: str):
 
