@@ -10,6 +10,8 @@ python = "^3.13"
 aio-pika = "^9.5.4"
 pydantic-settings = "^2.7.1"
 aiosmtplib = "^4.0.0"
+ruff = "^0.9.6"
+mypy = "^1.15.0"
 
 
 [build-system]
