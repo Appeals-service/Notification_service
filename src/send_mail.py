@@ -4,6 +4,7 @@ from aiosmtplib import SMTP
 
 from settings import settings
 
+
 async def send_message(email: str, msg_sub: str):
 
     message = EmailMessage()
